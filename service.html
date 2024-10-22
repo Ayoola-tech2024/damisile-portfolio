@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Portfolio</title>
+    <link rel="icon" href="Adams logo - Copy (2).JPG" />
+    <link rel="stylesheet" href="styel.css" />
+  </head>
+  <body>
+    <style>
+      .navbar a:hover,
+      .navbar a.active {
+        color: #00abf0;
+      }
+      img .cancel {
+        width: 10px;
+      }
+    </style>
+    <header class="header">
+      <a href="index.html" class="logo">ADAMS</a>
+      <nav id="navlinks" class="navbar">
+        <img src="Cancel button.JPG" onclick="cancelMenu()" class="Cancel" />
+        <a href="index.html">HOME</a>
+        <a href="about.html">ABOUT</a>
+        <a href="service.html" class="active">SERVICES</a>
+        <a href="contact.html">CONTACT</a>
+      </nav>
+      <img
+        src="menu_8872262.png"
+        onclick="showMenu()"
+        class="menu"
+        width="30px"
+      />
+    </header>
+    <center>
+      <div class="long-text">
+        <p>
+          The link below in the description is a project recently completed the
+          website will be updated every 3 months✔ , including this portfolio
+          website
+        </p>
+      </div>
+      <div class="long-text">
+        <a
+          href="http://ayoola-tech2024.github.io/Afsswebsite-adams/index.html"
+          target="_blank"
+          ><button class="✔">View now</button></a
+        >
+      </div>
+      <div class="long-text">
+        <p>
+          Links to other completed projects will also be posted to this website,
+          with a 3 months interval as earlier stated🔅
+        </p>
+      </div>
+    </center>
+
+    <center>
+      <footer class="footer">
+        <div class="container">
+          <div class="row">
+            <div class="col-md-4">
+              <h4>ABOUT US</h4>
+              <p>
+                Afsswebsite-adams is a leading provider of innovative solutions.
+              </p>
+              <ul class="social-media">
+                <li>
+                  <a href="#" target="_blank"
+                    ><i class="fa fa-facebook">Facebook: Ayoola Damisile</i></a
+                  >
+                </li>
+                <li>
+                  <a href="#" target="_blank"
+                    ><i class="fa fa-twitter">Twitter: Adams Romeo</i></a
+                  >
+                </li>
+                <li>
+                  <a href="#" target="_blank"
+                    ><i class="fa fa-linkedin">Linkedin: Ayoola Damisile</i></a
+                  >
+                </li>
+              </ul>
+            </div>
+            <div class="col-md-4">
+              <h4>Contact Us</h4>
+              <p>
+                Address: 74 ajilsoun street, Ado-ekiti,Ekiti-state Nigeria.
+                Phone: +234 08137565168 Email:
+                <a href="mailto:damisileayoola@gmail.com"
+                  >damisileayoola@gmail.com</a
+                >
+              </p>
+            </div>
+          </div>
+          <div class="copyright">
+            &copy; 2024 portfoliowebsite-adams. All rights reserved.
+          </div>
+        </div>
+      </footer>
+    </center>
+  </body>
+  <!--------javacript for toggle menu--------->
+  <script defer>
+    var navlinks = document.getElementById("navlinks");
+
+    function cancelMenu() {
+      navlinks.style.width = "0";
+    }
+    function showMenu() {
+      navlinks.style.width = "27vh";
+    }
+  </script>
+</html>
